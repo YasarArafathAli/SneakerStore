@@ -139,6 +139,13 @@ nav span{
     content: url("./Web/ShoeLarge.png");
 }
 
+.navcart {
+    content: url("./Web/Cart.svg");
+}
+
+.navham {
+    content: url("./Web/MenuHamburger.svg");
+}
 .rating {
     color : gold;
 }
@@ -198,6 +205,116 @@ font-weight: bold;
 }
 
 
+input {
+    text-align: center;
+    border: 1px solid #6C757D;
+}
+
+input[type="number"] {
+    -webkit-appearance: textfield !important;
+    -moz-appearance: textfield !important;
+    appearance: textfield !important;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+.customization{
+    display: flex;
+}
+.wrapper {
+    border: 2px #dcd3d3 solid;
+    width: 8vw;
+    height: 50px;
+    display: flex;
+    border-radius: 25px;
+    margin: 10px;
+
+}
+
+.wrapper.color {
+    display: flex;
+    place-items: center;
+    justify-content: flex-end;
+}
+
+.plusminus {
+    height: 100%;
+    width: 30%;
+    background: white;
+    border: none;
+    font-size: 40px;
+    color: #5f5fce;
+}
+
+.num {
+    height: 100%;
+    width: 39%;
+    border: none;
+    font-size: 30px;
+}
+
+
+
+
+
+
+ input[type="radio"] {
+     display: none;
+ }
+
+ input[type="radio"]:checked+label span {
+     transform: scale(1.25);
+ }
+
+ input[type="radio"]:checked+label .black {
+     border: 2px solid #000000;
+ }
+
+ input[type="radio"]:checked+label .gray {
+     border: 2px solid #eee;
+ }
+
+ input[type="radio"]:checked+label .purp {
+     border: 2px solid #7A3050;
+;
+ }
+
+ label {
+     display: inline-block;
+     width: 25px;
+     height: 25px;
+     margin-right: 10px;
+     cursor: pointer;
+ }
+
+ label:hover span {
+     transform: scale(1.25);
+ }
+
+ label span {
+     display: block;
+     border-radius: 25px;
+     width: 100%;
+     height: 100%;
+     transition: transform 0.2s ease-in-out;
+ }
+
+ label span.black {
+     background: #000000;
+ }
+
+ label span.gray {
+     background: #F3F3F3;
+;
+ }
+
+ label span.purp {
+     background: #7A3050;
+;
+ }
 
 @media all and (max-width: 786px) {
     body {
@@ -207,9 +324,11 @@ font-weight: bold;
     nav {
         background-color: rgba(55, 68, 91, 1);
         width: 100%;
+        padding: 30px 20px 5px;
     }
     nav h1{
         margin: 0;
+        font-size: 30px
     }
 
     nav ul li{
@@ -218,9 +337,17 @@ font-weight: bold;
     .product-image{
     content: url("./Mobile/ShoeSmall.png");
     }
+    .navcart{
+        content: url("./Mobile/Cart.svg");
+    }
+    .navham {
+        content: url("./Mobile/MenuHamburger.svg");
+    }
+    .search{
+        content: url("./Mobile/Search.svg")
+    }
     main{
         display: block;
-        text-align: center;
     }
     .search-input{
         display: none;
@@ -237,10 +364,16 @@ font-weight: bold;
     
     .product,.product-info{
         width: 100%;
+        padding: 10px 30px;
     }
     .heading{
         width: 100%;
         padding: 0;
         font-size: 20px;
+        text-align: center;
+
+    }
+    .breadcrumb{
+        text-align: left;
     }
 }
