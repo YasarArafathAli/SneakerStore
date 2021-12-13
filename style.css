@@ -62,10 +62,11 @@ ul{
 }
 nav , ul{
     display: flex;
-    justify-content: space-between;
 }
 
 nav{
+    justify-content: space-between;
+    width : 100vw;
     padding : 20px 10px;
 }
 nav h1{
@@ -96,44 +97,39 @@ nav span{
 .search {
     display: none;
 }
-.search-input {
+
+
+
+/* .search-input {
         transform: translate(-10px, -10px);
-        width: 75%;
         padding: 12px 24px;
         font-size: 14px;
         line-height: 18px;
         color: #575756;
         background-color:  #ECEFF2;
-        background-image: url("./Web/Search.svg");
+        border: 1px solid #575756;
+        /* width: 75%; */
+        /* background-image: url("./Web/Search.svg");
         background-repeat: no-repeat;
         background-size: 18px 18px;
         background-position: 95% center;
-        border-radius: 50px;
-        border: 1px solid #575756;
-        transition: all 250ms ease-in-out;
-        backface-visibility: hidden;
-        transform-style: preserve-3d;
-}
+        border-radius: 50px; */
+    /* } */
 .search-input::placeholder {
             color: color(#575756 a(0.8));
             text-transform: uppercase;
             letter-spacing: 1.5px;
+            text-align: left;
         }
         
 .search-input:hover, .search-input:focus {
             outline: 0;
             border: 1px solid #575756;
-}
+} 
 
 
 
-.heading{
-    font-weight: 900;
-    font-size: 30px;
-    line-height: 1;
-    padding-right: 100px
 
-}
 
 .product-image{
     content: url("./Web/ShoeLarge.png");
@@ -196,7 +192,11 @@ font-weight: bold;
 
 .product-info h1
  {
-    padding: 20px 0 10px 0;
+       font-weight: 900;
+       font-size: 60px;
+       line-height: 1;
+       padding-right: 100px;
+       padding: 20px 0 10px 0;
 }
 
 .ratings{
@@ -318,6 +318,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 @media all and (max-width: 786px) {
     body {
+        overflow: scroll;
         background: #fff;
     }
     
