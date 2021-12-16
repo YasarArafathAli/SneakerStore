@@ -455,4 +455,8 @@ nav ul li span.search-span input {
     display: none;
     border: none;
 }
+nav ul li:nth-child(2) {
+    width: 40%;
+    padding: 15px 0;
+}
 }
