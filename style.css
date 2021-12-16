@@ -77,6 +77,9 @@ nav ul li:first-of-type{
 nav ul li:nth-child(2) {
     width: 20%;
 }
+.search {
+    content: url("./Web/Search.svg");
+}
 
 nav ul li:nth-child(2) span{
     border-radius: 25px;
@@ -104,10 +107,23 @@ ul li{
 }
 
 
-nav ul li input{
+nav ul li span{
+    padding: 10px;
     width: 250px;
     height:40px;
+    border: 1px solid black;
     border-radius:20px;
+}
+
+
+nav ul li span input{
+    padding:0 10px;
+    border: none;
+    font-size: 20px;
+}
+
+nav ul li span input:focus {
+    outline: none;
 }
 span.bold{
     font-weight: bold;
@@ -125,9 +141,10 @@ nav>span{
 }
 
 
-.cart-number{
-    border-radius: 5px;
-    background-color: black;
+#cart-number{
+    border-radius: 30px;
+    width: 50px;
+    background-color: rgb(82, 82, 82);
 
 }
 
@@ -411,9 +428,7 @@ option{
     }
 
 
-    .search{
-        content: url("./Web/Search.svg");
-    }
+    
     
     .product,.product-info{
         width: 100%;
@@ -432,4 +447,12 @@ option{
     .wrapper{
         width:22vw;
     }
+    nav ul li span.search-span{
+        border: none;
+        padding:0;
+    }
+nav ul li span.search-span input {
+    display: none;
+    border: none;
+}
 }
