@@ -57,11 +57,35 @@ main{
 
 }
 
+.product-info{
+    padding-right: 17%;
+}
 ul{
     list-style: none;
 }
 nav , ul{
     display: flex;
+}
+
+nav ul{
+    width: 50%;
+}
+nav ul li:first-of-type{
+    width: 60%;
+}
+
+nav ul li:nth-child(2) {
+    width: 20%;
+}
+
+nav ul li:nth-child(2) span{
+    border-radius: 25px;
+    color: white;
+    background-color:#333333;
+    width: 50px;
+}
+nav ul li:last-child {
+    width: 20%;
 }
 
 nav{
@@ -79,6 +103,12 @@ ul li{
     padding: 15px 20px;
 }
 
+
+nav ul li input{
+    width: 250px;
+    height:40px;
+    border-radius:20px;
+}
 span.bold{
     font-weight: bold;
 }
@@ -86,7 +116,7 @@ span.light {
     font-weight: lighter;
 }
 
-nav span{
+nav>span{
     padding-left:10px;
 }
 
@@ -94,11 +124,12 @@ nav span{
     display: none;
 }
 
-.search {
-    display: none;
+
+.cart-number{
+    border-radius: 5px;
+    background-color: black;
+
 }
-
-
 
 /* .search-input {
         transform: translate(-10px, -10px);
@@ -224,6 +255,11 @@ input[type=number]::-webkit-outer-spin-button {
 .customization{
     display: flex;
 }
+
+.customization>span{
+    text-align: center;
+    font-size: 12px;
+}
 .wrapper {
     border: 2px #dcd3d3 solid;
     width: 8vw;
@@ -231,13 +267,18 @@ input[type=number]::-webkit-outer-spin-button {
     display: flex;
     border-radius: 25px;
     margin: 10px;
-
+    transform: scale(0.9);
 }
 
-.wrapper.color {
+.color .wrapper {
     display: flex;
     place-items: center;
     justify-content: flex-end;
+}
+
+.size select{
+    font-size: 20px;
+    padding: 10px 35px;
 }
 
 .plusminus {
@@ -245,7 +286,7 @@ input[type=number]::-webkit-outer-spin-button {
     width: 30%;
     background: white;
     border: none;
-    font-size: 40px;
+    font-size: 30px;
     color: #5f5fce;
 }
 
@@ -253,12 +294,18 @@ input[type=number]::-webkit-outer-spin-button {
     height: 100%;
     width: 39%;
     border: none;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 
+select{
+    width: 100%;
+    border-radius: inherit;
+}
 
-
+option{
+    padding: 20px;
+}
 
 
  input[type="radio"] {
@@ -361,6 +408,11 @@ input[type=number]::-webkit-outer-spin-button {
 
     .product-image.web {
         display: none;
+    }
+
+
+    .search{
+        content: url("./Web/Search.svg");
     }
     
     .product,.product-info{

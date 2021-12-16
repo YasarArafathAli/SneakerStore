@@ -16,14 +16,14 @@
             <li>
                 <!-- <label for="search">
                     <input class="search-input" type="text" placeholder="Search">
-                    <img class="search" alt="">
-
+                    
                 </label> -->
                 <label for="search">
-                    <input type="text" name="search" id="search" placeholder=""><img class="search" alt="">
+                    <input type="text" name="search" id="search" placeholder="Search">
+                    <img class="search" alt="search">
                 </label>
             </li>
-            <li><a href="#"> <img class="navcart " src="./Web/Cart.svg" alt="product Image"></a></li>
+            <li><a href="#"><img class="navcart " src="./Web/Cart.svg" alt="product Image"> <span id="cart-number">0</span></a></li>
             <li><a href="#"><img class="navham" src="./Web/MenuHamburger.svg" alt=""></a></li>
         </ul>
     </nav>
@@ -36,7 +36,7 @@
             <div class="breadcrumb"><span class="bold">Menu</span><span>&#9658;</span><span
                     class="bold">Shoes</span><span>&#9658;</span><span>Gray Running Shoes</span></div>
             <div class="heading">
-                <h1>Black Running Sneakers</h1>
+                <h1>Gray Running Sneakers</h1>
             </div>
             <div class="product mob">
                 <img class="product-image mob" src="" alt="">
@@ -61,26 +61,46 @@
                     of the membrane</p>
             </div>
             <div class="customization">
-                <span class="color wrapper"><input type="radio" name="color" id="black" value="black" />
+                <span class="color">
+COLOR
+                    <span class=" wrapper">
+                        <input type="radio" name="color" id="black" value="black" />
                     <label for="black"><span class="black"></span></label>
-
+                    
                     <input type="radio" name="color" id="gray" />
                     <label for="gray"><span class="gray"></span></label>
 
                     <input type="radio" name="color" id="purp" />
                     <label for="purp"><span class="purp"></span></label></span>
-                <span class="count wrapper">
-                    <button class="plusminus" onclick="handleMinus()">-</button>
-                    <input type="number" id = "num" class="num" value="0" />
-                    <button class="plusminus" onclick="handlePlus()">+</button>
+
+
+                    </span>
+                    <span class="size">
+SIZE
+                        <span class="wrapper size">
+                            <select name="size" id="size">
+                                <option value="38">38</option>
+                                <option value="40">40</option>
+                                <option value="42" selected>42</option>
+                                <option value="44">44</option>
+                            </select>
+                        </span>
+                    </span>
+                <span class = "count">
+QUALITY
+                    <span class=" wrapper">
+                        <button class="plusminus" onclick="handleMinus()">-</button>
+                        <input type="number" id = "num" class="num" value="0" />
+                        <button class="plusminus" onclick="handlePlus()">+</button>
+                    </span>
                 </span>
-            </div>
-            <div class="cart-contols">
-                <button class="btn add-to-cart"><img src="./Web/AddToCart.svg" alt=""> Add to Cart</button>
-                <button class="btn wishlist">
-                    <img src="./Web/Like.svg" alt=""> Save to Wishlist
-                </button>
-            </div>
+                </div>
+                <div class="cart-contols">
+                    <button class="btn add-to-cart"><img src="./Web/AddToCart.svg" alt=""> Add to Cart</button>
+                    <button class="btn wishlist">
+                        <img src="./Web/Like.svg" alt=""> Save to Wishlist
+                    </button>
+                </div>
             <div class="delivery info">
                 <p>Standard delivery in 2-4 days or Premium delivery in 2-4 hours</p>
             </div>
